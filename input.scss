@@ -1,0 +1,130 @@
+$cream: #fbf4ef;
+$vivid-sky: #4cc9f0;
+$persian-blue: #3f37c9;
+$purple: #480ca8;
+$indigo: #7209b7;
+$flickr: #f72585;
+$oxford: #011638;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: $cream;
+}
+h1 {
+  font-family: acier-bat-solid, sans-serif;
+  color: $oxford;
+  font-size: 20vh;
+}
+
+li {
+  font-family: acier-bat-solid, sans-serif;
+  font-size: 3vh;
+  color: $oxford;
+  list-style: none;
+  margin-right: 2%;
+  padding-top: 3%;
+  float: right;
+}
+
+#icon {
+  height: auto;
+  width: 100%;
+  max-width: 100px;
+}
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#boredom-button {
+  button {
+    border-color: $oxford;
+    border-width: 10px;
+    font-family: acier-bat-solid, sans-serif;
+    font-size: 7vh;
+    background-color: $cream;
+  }
+  button:hover {
+    animation-name: rainbow;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    color: $vivid-sky;
+  }
+  100% {
+    color: $flickr;
+  }
+}
+.navbar {
+  overflow: hidden;
+  background-color: $cream;
+  font-family: acier-bat-solid, sans-serif;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: $oxford;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  padding-top: 1%;
+  margin-left: 2%;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: $oxford;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: $cream;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: $oxford;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: $cream;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

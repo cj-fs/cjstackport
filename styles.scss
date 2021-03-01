@@ -1,0 +1,50 @@
+$cj-orange: #FB7553;
+$pastel-yellow: #DFBF5B;
+$rich-black: #10222F;
+$eggshell: #DDDEE2;
+$warm-gray: #9599B0;
+$flint: #37364B;
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+    // For Google Chrome
+    &::-webkit-scrollbar {
+      width:  $size;
+      height: $size;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background: $background-color;
+    }
+    
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $rich-black;
+    @include scrollbars(10px, $flint, $rich-black);
+    margin: 0%;
+    padding: 0%;
+}
+svg {
+    z-index: -1;
+}
+#hero {
+    display: flexbox;
+    height: 100vh;
+}
+
+#heroText {
+    font-family: acier-bat-solid, sans-serif;
+    z-index: 1;
+    color: $eggshell;
+    font-size: 5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 2rem;
+}

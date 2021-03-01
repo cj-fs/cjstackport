@@ -1,0 +1,39 @@
+body {
+  background-color: #10222F;
+  scroll-behavior: smooth;
+  margin: 0%;
+  padding: 0%;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #37364B;
+}
+body::-webkit-scrollbar-track {
+  background: #10222F;
+}
+
+svg {
+  z-index: -1;
+}
+
+#hero {
+  display: flexbox;
+  height: 100vh;
+}
+
+#heroText {
+  font-family: acier-bat-solid, sans-serif;
+  z-index: 1;
+  color: #DDDEE2;
+  font-size: 5rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 2rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
